@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>soryy</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ margin-left: 50px;
+}
+button{
+    height: 50px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid cyan;
+    border-radius: 20px;
+ background:linear-gradient(90deg,rgb(0, 238, 255),rgb(0, 255, 157),rgb(0, 255, 21));
+    color: white;
+}
+#cont2,#cont3,#cont4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 10px;
+    border-radius: 20px; color: white;
+    background:linear-gradient(90deg, rgb(13, 17, 91),rgb(2, 37, 83),blue);
+}
+    </style>
+</head>
+<body>
+    <div id="cont">
+        <button id="click1" onclick="sorry()">click1</button>
+        <button id="click2" onclick="ghusury()">click2</button>
+        <button id="click3" onclick="love()">click3</button>
+    </div>
+    <div id="cont2"></div>
+    <div id="cont3"></div>
+    <div id="cont4"></div>
+    <script>
+        let cont2=document.getElementById("cont2");
+        let cont3=document.getElementById("cont3");
+        let cont4=document.getElementById("cont4");
+       let sorry=()=>{
+        for(let i =1;i<=100;i++){
+           let rse=`${i}.Sorry lady 😔 <br>`
+           
+           cont2.innerHTML+=rse
+        }
+        cont3.innerHTML=' '
+        cont4.innerHTML=' '
+       }
+       let ghusury=()=>{
+        for(let i =1;i<=100;i++){
+           let rse=`${i}.GHUSURI 💗 <br>`
+         
+           cont3.innerHTML+=rse
+        }
+        cont2.innerHTML=' '
+        cont4.innerHTML=' '
+       }
+       let love=()=>{
+        for(let i =1;i<=100;i++){
+           let rse=`${i}.I LOVE YOU MY LADY 💗<br> `
+        
+           cont4.innerHTML+=rse 
+        }
+        cont2.innerHTML=' '
+        cont3.innerHTML=' '
+       }
+    </script>
+</body>
+</html>
